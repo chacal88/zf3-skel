@@ -16,6 +16,6 @@ return [
         'driver'   => 'Mysqli',
         'database' => 'autoavaliacao',
         'username' => 'root',
-        'password' => 'developer-password',
+        'password' => '',
     ],
 ];

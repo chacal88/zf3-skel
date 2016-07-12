@@ -11,18 +11,31 @@
     "homepage": "http://framework.zend.com/",
     "minimum-stability": "dev",
     "prefer-stable": true,
+    "repositories" : [ {
+        "type" : "vcs",
+        "url" : "git@github.com:samsonasik/ZendDeveloperTools.git"
+    }],
     "require": {
         "php": "^5.6 || ^7.0",
         "zendframework/zend-component-installer": "^1.0 || ^0.3 || ^1.0.0-dev@dev",
         "zendframework/zend-mvc": "^3.0.1",
         "zfcampus/zf-development-mode": "^3.0",
-        "zendframework/zend-test": "^3.0",
-        "zendframework/zend-db": "^2.8"
+        "zendframework/zend-cache": "^2.7.1",
+        "zendframework/zend-db": "^2.8.1",
+        "zendframework/zend-mvc-form": "^1.0",
+        "zendframework/zend-json": "^3.0",
+        "zendframework/zend-log": "^2.9",
+        "zendframework/zend-mvc-console": "^1.1.10",
+        "zendframework/zend-mvc-i18n": "^1.0",
+        "zendframework/zend-mvc-plugins": "^1.0.1",
+        "zendframework/zend-psr7bridge": "^0.2.2",
+        "zendframework/zend-session": "^2.7.1",
+        "zendframework/zend-servicemanager-di": "^1.0"
     },
     "autoload": {
         "psr-4": {
             "Application\\": "module/Application/src/",
-            "User\\": "module/User/src/"
+            "Album\\": "module/Album/src/"
         }
     },
     "autoload-dev": {
@@ -36,5 +49,9 @@
         "development-enable": "zf-development-mode enable",
         "development-status": "zf-development-mode status",
         "serve": "php -S 0.0.0.0:8080 -t public/ public/index.php"
+    },
+    "require-dev": {
+        "zendframework/zend-developer-tools": "dev-patch-3",
+        "zendframework/zend-test": "^3.0.1"
     }
 }

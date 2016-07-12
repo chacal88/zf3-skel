@@ -1,12 +1,6 @@
-CREATE TABLE user (
-id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-nome VARCHAR(30) NOT NULL,
-email VARCHAR(50),
-cadastro TIMESTAMP
-);
-
-INSERT INTO user (nome, email) VALUES  ('kaue rodrigues dos santos',  'kauemsc@gmail.com');
-INSERT INTO user (nome, email) VALUES  ('Adele',  '21');
-INSERT INTO user (nome, email) VALUES  ('Bruce  Springsteen',  'Wrecking Ball (Deluxe)');
-INSERT INTO user (nome, email) VALUES  ('Lana  Del  Rey',  'Born  To  Die');
-INSERT INTO user (nome, email) VALUES  ('Gotye',  'Making  Mirrors');
+CREATE TABLE album ( id INTEGER PRIMARY KEY AUTO_INCREMENT, artist varchar(100) NOT NULL, title varchar(100) NOT NULL);
+INSERT INTO album (artist, title) VALUES  ('The  Military  Wives',  'In  My  Dreams');
+INSERT INTO album (artist, title) VALUES  ('Adele',  '21');
+INSERT INTO album (artist, title) VALUES  ('Bruce  Springsteen',  'Wrecking Ball (Deluxe)');
+INSERT INTO album (artist, title) VALUES  ('Lana  Del  Rey',  'Born  To  Die');
+INSERT INTO album (artist, title) VALUES  ('Gotye',  'Making  Mirrors');

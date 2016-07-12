@@ -174,4 +174,3 @@ server {
 ```
 
 Restart the nginx, now you should be ready to go!
-"# zf3-skel" 
